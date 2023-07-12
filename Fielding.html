@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Net Session</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #EC1C24;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      .header img {
+        width: 120px;
+        height: auto;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+      .button {
+        display: inline-block;
+        background-color: #FF4E50;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0.8rem 1.5rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+      .button:hover {
+        background-color: #FF6668;
+      }
+      .icon {
+        margin-right: 0.5rem;
+      }
+      .content {
+        padding: 2rem;
+      }
+      .role-heading {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      .position {
+        margin-bottom: 1rem;
+      }
+      .position-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .position-description {
+        margin-top: 0.5rem;
+      }
+      .same-size-button {
+        width: 220px;
+        margin-top: 2rem;
+      }
+      .bottom-image {
+        max-width: 100%;
+        height: auto;
+      }
+		.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="header">  
+      <a href="#"><img src="banner.png" alt="Net Session"></a>
+      <h1>&nbsp;</h1>
+      <div>
+        <a href="batting.html" class="button">Batting</a>
+        <a href="bowling.html" class="button">Bowling</a>
+        <a href="#" class="button">Fielding</a>
+      </div>
+    </div>
+  <div class="button-container">
+      <a href="#" class="button same-size-button">
+        <i class="icon batting-icon"></i>Beginner
+      </a>
+      <a href="#" class="button same-size-button">
+        <i class="icon batting-icon"></i>Intermediate
+      </a>
+      <a href="#" class="button same-size-button">
+        <i class="icon batting-icon"></i>Advanced
+      </a>
+  </div>
+    <div class="content">
+      <h2 class="role-heading">Fielding</h2>
+      <p>
+        Fielding is a critical aspect of cricket that plays a significant role in the game's outcome. It involves the
+        skills and techniques required to prevent the opposing team from scoring runs and taking wickets. Effective
+        fielding can create pressure, generate opportunities, and turn the game in favor of the fielding team.
+      </p>
+      <h3 class="position-title">Fielders' Positions</h3>
+      <div class="position">
+        <p class="position-title">1. Wicketkeeper</p>
+        <p class="position-description">
+          The wicketkeeper stands behind the stumps and plays a crucial role in catching deliveries, stumping batsmen,
+          and providing constant communication with the captain and bowlers.
+        </p>
+      </div>
+      <div class="position">
+        <p class="position-title">2. Slips</p>
+        <p class="position-description">
+          Slip fielders position themselves close to the batsman, usually on the off-side, to catch edges or deflections
+          off the bat.
+        </p>
+      </div>
+      <div class="position">
+        <p class="position-title">3. Point</p>
+        <p class="position-description">
+          The fielder at point covers the region on the off-side just behind the batsman on the off-side and aims to
+          stop or intercept shots played in that area.
+        </p>
+      </div>
+      <div class="position">
+        <p class="position-title">4. Covers</p>
+        <p class="position-description">
+          The cover fielder operates on the off-side and covers the area between point and mid-off, aiming to prevent
+          runs in that region.
+        </p>
+      </div>
+      <div class="position">
+        <p class="position-title">5. Mid-off and Mid-on</p>
+        <p class="position-description">
+          The fielders at mid-off and mid-on stand on either side of the pitch, closer to the bowler, and prevent shots
+          hit straight down the ground.
+        </p>
+      </div>
+      <div class="position">
+        <p class="position-title">6. Midwicket</p>
+        <p class="position-description">
+          The fielder at midwicket covers the area on the leg side, aiming to stop or intercept shots played in that
+          region.
+        </p>
+      </div>
+      <div class="position">
+        <p class="position-title">7. Fine Leg and Third Man</p>
+        <p class="position-description">
+          The fielders at fine leg and third man are positioned near the boundary on the leg and off sides,
+          respectively, to stop or retrieve shots played in those directions.
+        </p>
+      </div>
+      <img class="bottom-image" src="positions.png" alt="Fielders' Positions">
+		<div class="iframe-container">
+    <iframe src="https://www.youtube.com/embed/1hy0NQQadxc" title="Field Placement" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+		
+
+  </body>
+</html>
