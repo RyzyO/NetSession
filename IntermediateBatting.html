@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <style>
-		
       body {
         font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
         margin: 0;
@@ -65,17 +64,54 @@
       .paragraph {
         margin-bottom: 1rem;
       }
-      .same-size-button {
-        width: 220px;
-        margin-top: 2rem;
+    .same-size-button {
+  margin-top: 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+ height: 40px;
+display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+  box-sizing: border-box; 
+}
+
+@media (max-width: 480px) {
+  .same-size-button {
+    flex: none;
+    font-size: 0.8em;
+	  
+	  
+  }
+}
+      .sel-page-button {
+     
+       
+        background-color: #FFEFEF;
+        color: black;
+  margin-top: 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+ height: 40px;
+display: flex;
+  align-items: center;
+
+  padding: 0 10px;
+  box-sizing: border-box; 
+}
+
+@media (max-width: 480px) {
+  .same-size-button {
+    flex: none;
+    font-size: 0.8em;
+  }
+}
       }
-		 .sel-page-button {
-        width: 220px;
-        margin-top: 2rem;
-		background-color: #FFEFEF;
-		color: black;
-      }
-	  .image-container {
+      .image-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
@@ -90,18 +126,27 @@
         .image-container {
           grid-template-columns: 1fr;
           justify-items: left;
-			text-align-last: left
+          text-align-last: left
+        }
+        .image-container .image-description {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .image-container .image-description p {
+          margin: 0;
         }
       }
     </style>
   </head>
   <body>
     <div class="header">
-      <a href="#"><img src="banner.png" alt="Net Session" /></a>
+      <a href="index.html"><img src="banner.png" alt="Net Session" /></a>
       <h1>&nbsp;</h1>
       <div>
+        <a href="Index.html" class="button">Home</a>
         <a href="Batting.html" class="button">Batting</a>
-        <a href="bowling.html" class="button">Bowling</a>
+        <a href="Bowling.html" class="button">Bowling</a>
         <a href="Fielding.html" class="button">Fielding</a>
       </div>
     </div>
@@ -119,61 +164,93 @@
     <div class="content">
       <h2 class="heading">Intermediate Batting</h2>
       <p class="paragraph">
-        Once you understand the basics of batting you can progress to playing shots and timing the ball. 
+        Once you understand the basics of batting, you can progress to playing shots and timing the ball.
       </p>
-      <h3 class="heading">Legnth&nbsp;</h3>
-		  <p class="paragraph">
-        In order to select the relevant shot for each delivery, it's important to first understand the different legnths a ball can pitch at. 
+      <h3 class="heading">Length</h3>
+      <p class="paragraph">
+        In order to select the relevant shot for each delivery, it's important to first understand the different lengths a ball can pitch at.
       </p>
       <div class="image-container">
         <a href="#"><img src="pitchlengths.png" alt="Right-Handed Batter" /></a>
-		<a href="#"><img src="lengthshots.png" alt="Right-Handed Batter" /></a>
-      
+        <div class="image-description">
+          <a href="#"><img src="lengthshots.png" alt="Right-Handed Batter" /></a>
+          
+        </div>
       </div>
-      <p class="paragraph">
-        The easiest and best place to stand when starting out is with one foot on either side of the crease, toes sitting on an imaginary line from the middle stump.
-      </p>
-		<h3 class="heading">Shots&nbsp;</h3>
-			<h4 class="heading">Defence&nbsp;</h4>
+      <h3 class="heading">Shots</h3>
+      <h4 class="heading">Defence</h4>
       <div class="image-container">
-        <a href="#"><img src="defence.gif" alt="Stance" /></a>
-        <p class"paragraph">To play the front foot defence:<ul><li>Keep your head over the ball</li><li>Step to where the ball pitches</li><li>Keep a bent elbow</li></ul></p>
+        <a href="#"><img src="defence.gif" alt="Defence" /></a>
+        <div class="image-description">
+          <p>To play the front foot defence:</p>
+          <ul>
+            <li>Keep your head over the ball</li>
+            <li>Step to where the ball pitches</li>
+            <li>Keep a bent elbow</li>
+          </ul>
+		  </div>
+		  
       </div>
+	
+		<h4 class="heading">Drive</h4>
+		 <div class="image-container">
+        <a href="#"><img src="drive.gif" alt="Drive" /></a>
+        <div class="image-description">
+          <p>To play the drive:</p>
+          <ul>
+            <li>Keep your head over the ball</li>
+            <li>Step to where the ball pitches</li>
+            <li>Keep a bent elbow</li>
+            <li>Follow through the action to add more power into the shot&nbsp;</li>
+          </ul>
+		
+			  </div>
+		</div>
+			 	<h4 class="heading">Pull Shot</h4>
+		 <div class="image-container">
+        <a href="#"><img src="pullshot.gif" alt="Drive" /></a>
+        <div class="image-description">
+          <p>To play the pull shot:</p>
+          <ul>
+            <li>Wait until the ball gets to you</li>
+            <li>Guide the ball square</li>
+            <li>Keep a straight elbow</li>
+            <li>Follow through the action to add more power into the shot&nbsp;</li>
+          </ul>
+			 </div>
+		</div>
+			 
       <h3 class="heading">Shot Selection</h3>
       <p class="paragraph">
-        Shot selection depends on factors such as the type of delivery, field placements, and game situation. Batters need
-        to choose the appropriate shot, such as drives, cuts, pulls, or sweeps, to score runs and manipulate the field.
+        Shot selection depends on factors such as the type of delivery, field placements, and game situation. Batters need to choose the appropriate shot, such as drives, cuts, pulls, or sweeps, to score runs and manipulate the field.
       </p>
-		      <a href="#"><img src="defence.png" alt="Stance" /></a>
-        <a href="#"><img src="".png" alt="Stance" /></a>
+      <div class="image-container">
+        <a href="#"><img src="defence.png" alt="Stance" /></a>
+        <a href="#"><img src="" alt="Stance" /></a>
+      </div>
       <h3 class="heading">Footwork</h3>
       <p class="paragraph">
-        Good footwork is essential for a batter. It helps in getting into the right position to play shots, maintaining
-        balance, and adjusting to different types of deliveries. Footwork involves quick movements and proper weight
-        transfer while playing shots. Evident in the images below, it is important to move both forward and backward to different deliveries to meet the ball where it pitches (or bounces).&nbsp; &nbsp; </p>
-		 <div class="image-container">
+        Good footwork is essential for a batter. It helps in getting into the right position to play shots, maintaining balance, and adjusting to different types of deliveries. Footwork involves quick movements and proper weight transfer while playing shots. Evident in the images below, it is important to move both forward and backward to different deliveries to meet the ball where it pitches (or bounces).
+      </p>
+      <div class="image-container">
         <a href="#"><img src="forwardfeet.png" alt="Stance" /></a>
         <a href="#"><img src="backwardfeet.png" alt="Stance" /></a>
       </div>
       <h3 class="heading">Timing and Placement</h3>
       <p class="paragraph">
-        Timing is crucial in cricket batting. Batters aim to hit the ball with the middle of the bat, known as the
-        "sweet spot," to generate maximum power and control. Placement is equally important, as it allows batters to find
-        gaps in the field and score runs strategically.
+        Timing is crucial in cricket batting. Batters aim to hit the ball with the middle of the bat, known as the "sweet spot," to generate maximum power and control. Placement is equally important, as it allows batters to find gaps in the field and score runs strategically.
       </p>
-		 <div class="image-container">
-		 <a href="#"><img src="placement.png" alt="Stance" /></a>
+      <div class="image-container">
+        <a href="#"><img src="placement.png" alt="Stance" /></a>
         <a href="#"><img src="sweetspot.png" alt="Stance" /></a>
-		</div>
+      </div>
       <h3 class="heading">Shot Execution</h3>
       <p class="paragraph">
-        Different shots require specific techniques. Batters should practice shots like drives (front foot and back foot),
-        cuts, pulls, hooks, and sweeps to develop a wide range of shot-making abilities and effectively counter bowlers.
+        Different shots require specific techniques. Batters should practice shots like drives (front foot and back foot), cuts, pulls, hooks, and sweeps to develop a wide range of shot-making abilities and effectively counter bowlers.
       </p>
       <h3 class="heading">Shot Selection</h3>
       <p class="paragraph">
-        Shot selection depends on factors such as the type of delivery, field placements, and game situation. batters need
-        to choose the appropriate shot, such as drives, cuts, pulls, or sweeps, to score runs and manipulate the field.
+        Shot selection depends on factors such as the type of delivery, field placements, and game situation. Batters need to choose the appropriate shot, such as drives, cuts, pulls, or sweeps, to score runs and manipulate the field.
       </p>
     </div>
   </body>
