@@ -67,11 +67,20 @@
       }
       .same-size-button {
   margin-top: 2rem;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 1em;
+  
+  flex: 1;
+  min-width: 0;
 }
+
+@media (max-width: 480px) {
+  .same-size-button {
+    flex: none;
+    font-size: 0.8em; 
+  }
+}
+
 
     </style>
   </head>
