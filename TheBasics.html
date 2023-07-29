@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Net Session</title>
+	  <link rel="icon" type="image/x-icon" href="favicon.png">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+		
+      body {
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #EC1C24;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+      .header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      .header img {
+        width: 120px;
+        height: auto;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+      }
+      .button {
+        display: inline-block;
+        background-color: #FF4E50;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0.8rem 1.5rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+      .button:hover {
+        background-color: #FF6668;
+      }
+      .icon {
+        margin-right: 0.5rem;
+      }
+      .content {
+        padding: 2rem;
+      }
+      .heading {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      .paragraph {
+        margin-bottom: 1rem;
+      }
+      .same-size-button {
+  margin-top: 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+ height: 40px;
+display: flex;
+  align-items: center;
+	      padding: 0 10px;
+  box-sizing: border-box; 
+}
+      
+		 .sel-page-button {
+   
+       
+		background-color: #FFEFEF;
+		color: black;
+	margin-top: 2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 0;
+ height: 40px;
+display: flex;
+  align-items: center;
+			 padding: 0 10px;
+  box-sizing: border-box; 
+
+      }
+      
+		.iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  margin-top: 1rem;
+  overflow: hidden;
+}
+		.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+	  .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media (max-aspect-ratio: 1/1) {
+        .image-container {
+          grid-template-columns: 1fr;
+          justify-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+       <a href="index.html"><img src="banner.png" alt="Net Session" /></a>
+      <h1>&nbsp;</h1>
+      <div>
+		  <a href="index.html" class="button">Home</a>
+        <a href="Batting.html" class="button">Batting</a>
+        <a href="bowling.html" class="button">Bowling</a>
+        <a href="Fielding.html" class="button">Fielding</a>
+      </div>
+    </div>
+    
+    <div class="content">
+      <h2 class="heading">The Basics</h2>
+      <p class="paragraph">
+        This page is for people who are new to the game of cricket, it contains steps for bare beginners incliding the basic rules.
+      </p>
+      <h3 class="heading">The Score</h3>
+      <p class="paragraph">
+      The goal of cricket is to score more runs than the other team. The scoring system can be seen below. </p>
+      <div class="image-container">
+        <a href="#"><img src="2for150.png" alt="Right-Handed Batter" /></a>
+        <div class="image-description">
+          <a href="#"><img src="teamb.png" alt="Right-Handed Batter" /></a>
+		  </div>
+		</div>
+	  </div>
+		  <div class="content">
+      
+     
+      <h3 class="heading">Overs</h3>
+     <p class="paragraph">
+      An over consists of six legal deliveries. If the bowler delivers a ball which is a wide or a no ball, it must be re-bowled.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
+      <div class="image-container">
+        <a href="#"><img src="legaldeliveries.png" alt="Right-Handed Batter" /></a>
+        <div class="image-description">
+          <a href="#"><img src="numberofovers.png" alt="Right-Handed Batter" /></a>
+		  </div>
+			  </div>
+	  </div>
+		  <div class="content">
+      
+     
+      <h3 class="heading">Boundaries</h3>
+     <p class="paragraph">
+      When the ball reaches the edge of the field (or boundary), rather than having to run by foot to score, they are awarded either 4 or 6 runs.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
+      <div class="image-container">
+        <a href="#"><img src="four.png" alt="Right-Handed Batter" /></a>
+        <div class="image-description">
+          <a href="#"><img src="six.png" alt="Right-Handed Batter" /></a>
+		  </div>
+			  </div>		</div>
+	   <div class="content">
+      
+     
+      <h3 class="heading">Running</h3>
+     <p class="paragraph">
+      Unlike some less formal forms of cricket, you do not have to run just because you have hit the ball. If you or the other batter have hit the ball and believe that you can run to the other end before a fielder is able to get the ball there, you can run. It is important to be clear and loud when telling the other batter if you are going to run or not. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </p>
+      <div class="image-container">
+        <a href="#"><img src="norun.png" alt="Right-Handed Batter" /></a>
+        <div class="image-description">
+          <a href="#"><img src="run.png" alt="Right-Handed Batter" /></a>
+		  </div>
+			  </div>		</div>
+	  
+
+
+	 
+</body>
+</html>
